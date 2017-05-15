@@ -1,4 +1,5 @@
-﻿using static System.Console;
+﻿using System;
+using static System.Console;
 
 namespace haha
 {
@@ -15,6 +16,12 @@ namespace haha
             tiger.Hunt(); 
             tiger.Eat(); 
             tiger.Sleep(); 
+
+            Cheetah cheetah = new Cheetah();
+            cheetah.Hunt();
+            cheetah.Eat();
+            cheetah.Sleep();
+            cheetah.SoftPurr(40);
 
             ReadLine();
         }
@@ -71,5 +78,31 @@ namespace haha
         {
             WriteLine($"The {TigerColor} lion sleeps.");
         }
+    }
+    public class Cheetah : Cat, IPurrable
+    {
+        public override void Eat()
+        {
+            WriteLine($"The cheetah eats.");
+        }
+
+        public override void Hunt()
+        {
+            WriteLine($"The cheetah hunts.");
+        }
+
+        public override void Sleep()
+        {
+            WriteLine($"The cheetah sleeps.");
+        }
+
+        public void SoftPurr(int decibel)
+        {
+            WriteLine($"The {nameof(Cheetah)} purrs at {decibel} decibels");
+        }
+    }
+    interface IPurrable
+    {
+        void SoftPurr(int decibel);
     }
 }
