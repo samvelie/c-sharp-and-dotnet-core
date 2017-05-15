@@ -98,7 +98,7 @@ namespace haha
 
         public void SoftPurr(int decibel)
         {
-            WriteLine($"The {nameof(Cheetah)} purrs at {decibel} decibels");
+            WriteLine($"The {nameof(Cheetah)} purrs at {decibel} decibels.");
         }
     }
     interface IPurrable
