@@ -1,0 +1,8 @@
+/Users/samvelie/Documents/learning/dotnet/haha/bin/Debug/netcoreapp1.1/haha.deps.json
+/Users/samvelie/Documents/learning/dotnet/haha/bin/Debug/netcoreapp1.1/haha.runtimeconfig.json
+/Users/samvelie/Documents/learning/dotnet/haha/bin/Debug/netcoreapp1.1/haha.runtimeconfig.dev.json
+/Users/samvelie/Documents/learning/dotnet/haha/obj/Debug/netcoreapp1.1/haha.AssemblyInfo.cs
+/Users/samvelie/Documents/learning/dotnet/haha/bin/Debug/netcoreapp1.1/haha.dll
+/Users/samvelie/Documents/learning/dotnet/haha/bin/Debug/netcoreapp1.1/haha.pdb
+/Users/samvelie/Documents/learning/dotnet/haha/obj/Debug/netcoreapp1.1/haha.dll
+/Users/samvelie/Documents/learning/dotnet/haha/obj/Debug/netcoreapp1.1/haha.pdb
