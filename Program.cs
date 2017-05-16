@@ -7,26 +7,32 @@ namespace haha
     {
         static void Main(string[] args)
         {
-            Lion lion = new Lion(Lion.ColorSpectrum.White); 
-            lion.Hunt(); 
-            lion.Eat(); 
-            lion.Sleep(); 
+            PerformAction<int> iAction = new PerformAction<int>(21); 
+            iAction.IdentifyDataType(); 
 
-            Tiger tiger = new Tiger(Tiger.ColorSpectrum.Blue); 
-            tiger.Hunt(); 
-            tiger.Eat(); 
-            tiger.Sleep(); 
+            PerformAction<decimal> dAction = new 
+                                    PerformAction<decimal>(21.55m); 
+            dAction.IdentifyDataType(); 
 
-            Cheetah cheetah = new Cheetah();
-            cheetah.Hunt();
-            cheetah.Eat();
-            cheetah.Sleep();
-            cheetah.SoftPurr(40);
+            PerformAction<string> sAction = new 
+                            PerformAction<string>("Hello Generics"); 
+            sAction.IdentifyDataType(); 
 
             ReadLine();
         }
     }
-
+    public class PerformAction<T>
+    {
+        private T _value;
+        public PerformAction(T value)
+        {
+            _value = value;
+        }
+        public void IdentifyDataType()
+        {
+            WriteLine($"The data type of the variable supplied is {_value.GetType()}");
+        }
+    }
     public abstract class Cat
     {
         public abstract void Eat();
